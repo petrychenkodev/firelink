@@ -1,4 +1,4 @@
-Тестовое задание для Firelink. <br>
+<b>Тестовое задание для Firelink.</b> <br>
 Базовая верстка - 5 часов.<br>
 https://petrychenkodev.github.io/firelink/<br>
 ТЗ:<br>
