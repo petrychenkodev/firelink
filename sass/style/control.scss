@@ -1,0 +1,50 @@
+@import 'header';
+.control{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0 60px 0;
+	.control__search{
+		position: relative;
+		input{
+			@include segoe-text;
+			width: 225px;
+			padding: 10px;
+		}
+		img{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			cursor: pointer;
+		}
+	}
+	.control__buttons{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			@include segoe-text;
+			color: #777777;
+			font-size: 12px;
+			border-right: 1px solid grey;
+			padding: 0 15px;
+			cursor: pointer;
+		}
+		li:last-child{
+			padding-right: 0;
+			border: none;
+		}
+	}
+	.cart{
+		background-color: #f1f3f5;
+		border-radius: 5px;
+		padding: 0 15px;
+		@include segoe-text;
+		img{
+			margin-right: 8px;
+		}
+	}
+}

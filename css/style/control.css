@@ -1,0 +1,112 @@
+.header__decor {
+  height: 3px;
+  border-top: 3px solid #59b7c2;
+  background-color: #7fcbce;
+  border-bottom: 3px solid #aadce0; }
+
+.header__block {
+  background-color: #f5f7f9; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navigation__call a {
+    font-family: 'Segoe UI';
+    font-size: 11px;
+    font-weight: normal;
+    color: #444444;
+    text-decoration: none;
+    margin-left: 8px; }
+  .navigation__welc {
+    font-family: 'Bitter', serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #777777; }
+    .navigation__welc span {
+      color: #59b7c2;
+      cursor: pointer; }
+  .navigation .navigation__choose {
+    display: flex; }
+    .navigation .navigation__choose .choose__lang {
+      margin: 0;
+      display: flex;
+      list-style: none; }
+      .navigation .navigation__choose .choose__lang li {
+        font-family: 'Segoe UI';
+        font-size: 11px;
+        font-weight: normal;
+        color: #444444;
+        padding: 15px 10px;
+        background-color: #e6e9ed;
+        margin: 0 1px;
+        cursor: pointer; }
+    .navigation .navigation__choose .choose__curr {
+      margin: 0;
+      display: flex;
+      list-style: none; }
+      .navigation .navigation__choose .choose__curr li {
+        font-family: 'Segoe UI';
+        font-size: 11px;
+        font-weight: normal;
+        color: #444444;
+        padding: 15px 10px;
+        background-color: #e6e9ed;
+        margin: 0 1px;
+        cursor: pointer; }
+
+.lang__active {
+  background-color: #78c4cd !important; }
+
+.curr__active {
+  background-color: #78c4cd !important; }
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 60px 0; }
+  .control .control__search {
+    position: relative; }
+    .control .control__search input {
+      font-family: 'Segoe UI';
+      font-size: 11px;
+      font-weight: normal;
+      color: #444444;
+      width: 225px;
+      padding: 10px; }
+    .control .control__search img {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer; }
+  .control .control__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .control .control__buttons li {
+      font-family: 'Segoe UI';
+      font-size: 11px;
+      font-weight: normal;
+      color: #444444;
+      color: #777777;
+      font-size: 12px;
+      border-right: 1px solid grey;
+      padding: 0 15px;
+      cursor: pointer; }
+    .control .control__buttons li:last-child {
+      padding-right: 0;
+      border: none; }
+  .control .cart {
+    background-color: #f1f3f5;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-family: 'Segoe UI';
+    font-size: 11px;
+    font-weight: normal;
+    color: #444444; }
+    .control .cart img {
+      margin-right: 8px; }

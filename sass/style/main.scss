@@ -1,0 +1,169 @@
+@import 'mainsection';
+.container{
+	margin: 0 auto;
+	max-width: 988px;
+}
+
+.bestsellers{
+	margin-bottom: 60px;
+	.bestsellers__header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #e0e0e0;
+		h1{
+			@include bitter-max;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+}
+.products{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	.products__item{
+		position: relative;
+		flex-basis: 20%;
+		border: 1px solid #e0e0e0;
+		border-radius: 3px;
+		.sale{
+			position: absolute;
+			top: -12px;
+			left: -12px;
+		}
+		img{
+			padding: 8px;
+		}
+		.item__name{
+			@include bitter-text;
+			font-size: 13px;
+			line-height: 18px;
+			height: 35px;
+			padding: 8px;
+			margin: 0;
+		}
+		.item__info{
+			display: flex;
+			align-items: stretch;
+			justify-content: space-between;
+			list-style: none;
+			margin:0;
+			padding:0;
+			width: 100%;
+			&__price{
+				@include bitter-text;
+				color: #2e8f9a;
+				border: 1px solid #e0e0e0;
+				flex-grow: 3;
+				display:flex;
+				justify-content: flex-start;
+				align-items:center;
+				padding-left: 7px;
+				cursor: pointer;
+				padding: 7px;
+				flex-wrap: wrap;
+				.ex__price{
+					font-size: 11px;
+					color: #444444;
+					text-decoration: line-through;
+					width: 100%;
+				}
+			}
+			&__transfer{
+				border: 1px solid #e0e0e0;
+				flex-grow: 1;
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				cursor: pointer;
+				padding: 10px;
+			}
+			&__like{
+				border: 1px solid #e0e0e0;
+				flex-grow: 1;
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				cursor: pointer;
+			}
+			&__cart{
+				border: 1px solid #e0e0e0;
+				flex-grow: 1;
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				background-color: #f5f7f9;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+.allnews{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 70px;
+	.aboutus, .news, .newsletter{
+		background-color: #f5f7f9;
+		padding: 0 20px;
+		flex-basis: 27%;
+		h1{
+			@include bitter-max;
+			font-size: 18px;
+			margin: 15px 0 25px 0;
+		}
+		p{
+			@include segoe-text;
+			margin: 0;
+			margin-bottom: 20px;
+			color: #777777;
+		}
+	}
+	.news{
+		span{
+			font-family: 'Segoe UI';
+			font-size: 11px;
+			color: #777777;
+			font-style: italic;
+		}
+		p{
+			color: #2e8f9a;
+		}
+	}
+	.newsletter{
+		form{
+			position: relative;
+			margin-bottom: 22px;
+			input{
+				width:90%;
+				padding:10px;
+				@include segoe-text;
+			}
+			img{
+				position: absolute;
+				right:10px;
+				top: 10px;
+				cursor: pointer;
+			}
+		}
+		div{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p{
+				margin: 0;
+				padding-left: 20px;
+				padding-right: 30px;
+				font-family: 'Bitter', serif;
+				line-height: 17px;
+				font-size: 11px;
+				font-style: italic;
+			}
+		}
+	}
+}

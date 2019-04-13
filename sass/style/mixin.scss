@@ -1,0 +1,24 @@
+@mixin segoe-text {
+  font: {
+    family: 'Segoe UI';
+    size: 11px;
+    weight: normal;
+  }
+  color: #444444;
+}
+@mixin bitter-text {
+  font: {
+    family: 'Bitter', serif;
+    size: 12px;
+    weight: normal;
+  }
+  color: #777777;
+}
+@mixin bitter-max {
+  font: {
+    family: 'Bitter', serif;
+    size: 14px;
+    weight: normal;
+  }
+  color: #444444;
+}
