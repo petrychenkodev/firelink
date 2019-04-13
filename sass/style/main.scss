@@ -167,3 +167,52 @@
 		}
 	}
 }
+
+.footer{
+	background-image: url('../../img/footerBG.png');
+	padding:60px 0;
+	.footer__tags{
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		ul{
+			list-style: none;
+			margin: 0;
+			flex-grow: 1;
+			padding-left: 15px;
+			li{
+				padding-top:15px;
+				font-family: 'Segoe UI';
+				font-size:12px;
+				color:#777777;
+				h1{
+					@include bitter-max;
+					font-size: 18px;
+					border-bottom: 1px solid #e0e0e0;
+					padding-bottom: 15px;
+					margin:0;
+				}
+				img{
+					padding-right: 8px;
+				}
+				a{
+					text-decoration: none;
+					color:#777777;
+				}
+			}
+		}
+	}
+}
+.developer{
+	background-color:#f9fbfc;
+	padding: 30px 0;
+	.developer__flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		p{
+			@include segoe-text;
+			color: #777777;
+		}
+	}
+}
