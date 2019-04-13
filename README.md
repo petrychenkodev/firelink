@@ -1,7 +1,7 @@
-Тестовое задание для Firelink.
-Базовая верстка - 5 часов.
-https://petrychenkodev.github.io/firelink/
-ТЗ:
+Тестовое задание для Firelink. <br>
+Базовая верстка - 5 часов.<br>
+https://petrychenkodev.github.io/firelink/<br>
+ТЗ:<br>
 1) Адаптивная (на свое усмотрение, не использовать Bootstrap), валидная, кроссбраузерная (IE11\Edge, FF, Safari, Chrome), семантичная верстка
 2) БЭМ
 3) Рабочий слайдер с дотами
