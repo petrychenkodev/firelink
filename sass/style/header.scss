@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import 'mixin';
 .header{
 	background:url('../../img/headerBG.png') repeat-x 0 0 #f5f7f9;
@@ -44,51 +43,4 @@
 {
 	background-color: #78c4cd !important;
 	color: #fff !important;
-=======
-@import 'mixin';
-.header{
-	background:url('../../img/headerBG.png') repeat-x 0 0 #f5f7f9;
-	padding-top: 9px;
-}
-.navigation{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	&__call{
-		a{
-			@include segoe-text;
-			text-decoration: none;
-			margin-left: 8px;
-
-		}
-	}
-	&__welc{
-		@include bitter-text;
-	}
-	.navigation__choose{
-		display: flex;
-		.choose__lang, 
-		.choose__curr{
-			margin: 0;
-			display: flex;
-			list-style: none;
-			li{
-				@include segoe-text;
-				@include transition;
-				padding: 15px 10px;
-				background-color: #e6e9ed;
-				margin: 0 1px;
-				cursor: pointer;
-			}
-		}
-	}
-}
-.lang__active,
-.curr__active,
-.choose__lang li:hover, 
-.choose__curr li:hover
-{
-	background-color: #78c4cd !important;
-	color: #fff !important;
->>>>>>> c1b1f441caf7d9f836e14ddfa959ff164ca418e2
 }
