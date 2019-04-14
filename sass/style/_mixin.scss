@@ -22,3 +22,15 @@
   }
   color: #444444;
 }
+@mixin transition{
+  transition: .3s ease;
+}
+.link--blue{
+  cursor:pointer;
+  color:#59b7c2;
+  text-decoration: none;
+  @include transition;
+  &:hover{
+    color:#96aaad;
+  }
+}

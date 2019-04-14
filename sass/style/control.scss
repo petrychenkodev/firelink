@@ -10,6 +10,9 @@
 			@include segoe-text;
 			width: 225px;
 			padding: 10px;
+			border:1px solid #cccccc;
+			border-radius: 3px;
+			outline: none;
 		}
 		img{
 			position: absolute;
@@ -29,9 +32,13 @@
 			@include segoe-text;
 			color: #777777;
 			font-size: 12px;
-			border-right: 1px solid grey;
+			border-right: 1px solid #e0e0e0;
 			padding: 0 15px;
 			cursor: pointer;
+			@include transition;
+			&:hover{
+				color: #000;
+			}
 		}
 		li:last-child{
 			padding-right: 0;
@@ -40,11 +47,18 @@
 	}
 	.cart{
 		background-color: #f1f3f5;
-		border-radius: 5px;
+		border-radius: 2px;
 		padding: 0 15px;
+		cursor:pointer;
+		margin-left: 15px;
 		@include segoe-text;
 		img{
 			margin-right: 8px;
 		}
 	}
+}
+.block--inline{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
