@@ -1,0 +1,36 @@
+@mixin segoe-text {
+  font: {
+    family: 'Segoe UI';
+    size: 11px;
+    weight: normal;
+  }
+  color: #444444;
+}
+@mixin bitter-text {
+  font: {
+    family: 'Bitter', serif;
+    size: 12px;
+    weight: normal;
+  }
+  color: #777777;
+}
+@mixin bitter-max {
+  font: {
+    family: 'Bitter', serif;
+    size: 14px;
+    weight: normal;
+  }
+  color: #444444;
+}
+@mixin transition{
+  transition: .3s ease;
+}
+.link--blue{
+  cursor:pointer;
+  color:#59b7c2;
+  text-decoration: none;
+  @include transition;
+  &:hover{
+    color:#96aaad;
+  }
+}
