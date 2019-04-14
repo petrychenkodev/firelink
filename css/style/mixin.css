@@ -1,0 +1,7 @@
+.link--blue {
+  cursor: pointer;
+  color: #59b7c2;
+  text-decoration: none;
+  transition: 5s ease; }
+  .link--blue:hover {
+    color: #000; }

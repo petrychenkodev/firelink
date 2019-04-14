@@ -1,7 +1,7 @@
 @import 'mainsection';
 .container{
 	margin: 0 auto;
-	max-width: 988px;
+	max-width: 984px;
 }
 
 .bestsellers{
@@ -18,6 +18,19 @@
 		}
 	}
 }
+.product__control{
+	img{
+		opacity: .7;
+		@include transition;
+		cursor: pointer;
+		&:first-child{
+			margin-right:3px;
+		}
+		&:hover{
+			opacity:1;
+		}
+	}
+}
 .products{
 	display: flex;
 	justify-content: space-between;
@@ -31,19 +44,20 @@
 		border-radius: 3px;
 		.sale{
 			position: absolute;
-			top: -12px;
-			left: -12px;
+			top: -4px;
+			left: -4px;
 		}
-		img{
+		.product__img{
 			padding: 8px;
+			cursor:pointer;
 		}
 		.item__name{
 			@include bitter-text;
 			font-size: 13px;
 			line-height: 18px;
-			height: 35px;
 			padding: 8px;
 			margin: 0;
+			height: 35px;
 		}
 		.item__info{
 			display: flex;
@@ -53,18 +67,26 @@
 			margin:0;
 			padding:0;
 			width: 100%;
+			border-top: 1px solid #e0e0e0;
+			height: 45px;
+			li{
+				border-right:1px solid #e0e0e0;
+				padding:7px;
+				&:last-child{
+					border-right:none;
+				}
+			}
 			&__price{
 				@include bitter-text;
 				color: #2e8f9a;
-				border: 1px solid #e0e0e0;
-				flex-grow: 3;
+				flex-grow: 1;
 				display:flex;
 				justify-content: flex-start;
 				align-items:center;
 				padding-left: 7px;
-				cursor: pointer;
 				padding: 7px;
 				flex-wrap: wrap;
+				flex-basis:100px;
 				.ex__price{
 					font-size: 11px;
 					color: #444444;
@@ -73,7 +95,6 @@
 				}
 			}
 			&__transfer{
-				border: 1px solid #e0e0e0;
 				flex-grow: 1;
 				display:flex;
 				justify-content: center;
@@ -82,7 +103,6 @@
 				padding: 10px;
 			}
 			&__like{
-				border: 1px solid #e0e0e0;
 				flex-grow: 1;
 				display:flex;
 				justify-content: center;
@@ -90,7 +110,6 @@
 				cursor: pointer;
 			}
 			&__cart{
-				border: 1px solid #e0e0e0;
 				flex-grow: 1;
 				display:flex;
 				justify-content: center;
@@ -122,6 +141,7 @@
 			margin: 0;
 			margin-bottom: 20px;
 			color: #777777;
+			line-height:17px;
 		}
 	}
 	.news{
@@ -140,9 +160,15 @@
 			position: relative;
 			margin-bottom: 22px;
 			input{
-				width:90%;
+				width:100%;
+				box-sizing: border-box;
 				padding:10px;
 				@include segoe-text;
+				border-radius: 3px;
+				border: 1px solid #ccc;
+				outline: none;
+				background: url('../../img/go.png') no-repeat calc(100% - 8px) 50% #fff;
+				padding-right:30px;
 			}
 			img{
 				position: absolute;
@@ -171,6 +197,8 @@
 .footer{
 	background-image: url('../../img/footerBG.png');
 	padding:60px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
 	.footer__tags{
 		display: flex;
 		justify-content: space-between;

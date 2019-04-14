@@ -1,12 +1,7 @@
 @import 'mixin';
-.header__decor{
-	height: 3px;
-	border-top: 3px solid #59b7c2;
-	background-color: #7fcbce;
-	border-bottom: 3px solid #aadce0;
-}
-.header__block{
-	background-color: #f5f7f9;
+.header{
+	background:url('../../img/headerBG.png') repeat-x 0 0 #f5f7f9;
+	padding-top: 9px;
 }
 .navigation{
 	display: flex;
@@ -22,31 +17,17 @@
 	}
 	&__welc{
 		@include bitter-text;
-		span{
-			color: #59b7c2;
-			cursor: pointer;
-		}
 	}
 	.navigation__choose{
 		display: flex;
-		.choose__lang{
-			margin: 0;
-			display: flex;
-			list-style: none;
-			li{
-				@include segoe-text;
-				padding: 15px 10px;
-				background-color: #e6e9ed;
-				margin: 0 1px;
-				cursor: pointer;
-			}
-		}
+		.choose__lang, 
 		.choose__curr{
 			margin: 0;
 			display: flex;
 			list-style: none;
 			li{
 				@include segoe-text;
+				@include transition;
 				padding: 15px 10px;
 				background-color: #e6e9ed;
 				margin: 0 1px;
@@ -55,9 +36,11 @@
 		}
 	}
 }
-.lang__active{
+.lang__active,
+.curr__active,
+.choose__lang li:hover, 
+.choose__curr li:hover
+{
 	background-color: #78c4cd !important;
-}
-.curr__active{
-	background-color: #78c4cd !important;
+	color: #fff !important;
 }
