@@ -1,5 +1,5 @@
 Тестовое задание для Firelink. <br>
-<h1>https://petrychenkodev.github.io/firelink/</h1><br>
+<h3>https://petrychenkodev.github.io/firelink/</h3><br>
 
 Сверстать необходимо до блока "Best sellers". Из требований:<br>
 1) Адаптивная (на свое усмотрение, не использовать Bootstrap), валидная, кроссбраузерная (IE11\Edge, FF, Safari, Chrome), семантичная верстка<br>
