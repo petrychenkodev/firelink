@@ -16,8 +16,13 @@
 				padding: 20px;
 				cursor: pointer;
 				transition: 0.3s;
+				&:hover{
+					background-color: #78c4cd;
+					color: #fff;
+					transition: 0.3s;
+				}
 			}
-			li:hover{
+			.navigation--active{
 				background-color: #78c4cd;
 				color: #fff;
 				transition: 0.3s;
@@ -33,6 +38,7 @@
 		overflow: hidden;
 		.slider__content{
 			display:flex;
+			@include transition;
 		}
 		.slider__control{
 			position:absolute;
