@@ -135,7 +135,11 @@
         padding: 20px;
         cursor: pointer;
         transition: 0.3s; }
-      .main .navigation .navigation__list li:hover {
+        .main .navigation .navigation__list li:hover {
+          background-color: #78c4cd;
+          color: #fff;
+          transition: 0.3s; }
+      .main .navigation .navigation__list .navigation--active {
         background-color: #78c4cd;
         color: #fff;
         transition: 0.3s; }
@@ -146,7 +150,8 @@
     position: relative;
     overflow: hidden; }
     .main .slider__inside .slider__content {
-      display: flex; }
+      display: flex;
+      transition: .3s ease; }
     .main .slider__inside .slider__control {
       position: absolute;
       top: calc(50% - 21px);
