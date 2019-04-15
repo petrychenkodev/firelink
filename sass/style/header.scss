@@ -3,7 +3,7 @@
 	background:url('../../img/headerBG.png') repeat-x 0 0 #f5f7f9;
 	padding-top: 9px;
 }
-.navigation{
+.navigat{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -18,7 +18,7 @@
 	&__welc{
 		@include bitter-text;
 	}
-	.navigation__choose{
+	.navigat__choose{
 		display: flex;
 		.choose__lang, 
 		.choose__curr{
@@ -43,4 +43,24 @@
 {
 	background-color: #78c4cd !important;
 	color: #fff !important;
+}
+
+@media (max-width: 760px) {
+	.navigat{
+		flex-wrap: wrap;
+		padding-left: 20%;
+		&__call{
+			flex-basis: 100%;
+		    padding-bottom: 15px;
+		    padding-top: 15px;
+		}
+		&__welc{
+		    flex-basis: 100%;
+    		padding-bottom: 15px;
+		}
+		&__choose{
+		    flex-basis: 100%;
+    		margin-left: -40px;
+		}
+	}
 }

@@ -11,13 +11,13 @@
 </head>
 <body>
 	<header class="header">
-			<div class="navigation container">
-				<span class="navigation__call">
+			<div class="navigat container">
+				<span class="navigat__call">
 					<img src="img/tel.png" alt="tel">
 					<a href="tel:+777-100-1234">Call Us +777 (100) 1234</a>
 				</span>
-				<div class="navigation__welc">Welcome visitor you can <span class="link--blue">login</span> or <span class="link--blue">create an account</span>.</div>
-				<div class="navigation__choose">
+				<div class="navigat__welc">Welcome visitor you can <span class="link--blue login--start">login</span> or <span class="link--blue">create an account</span>.</div>
+				<div class="navigat__choose">
 					<ul class="choose__lang">
 						<li class="lang__active">EN</li>
 						<li>FR</li>
@@ -43,7 +43,7 @@
 				<ul class="control__buttons">
 					<li>My Account</li>
 					<li>My Wishlist</li>
-					<li>Log In</li>
+					<li class="login--start">Log In</li>
 					<li>Sign Up</li>
 				</ul>
 				<div class="cart">
@@ -70,12 +70,12 @@
 						<img src="img/arrow__right.png" alt="right" class="slider__right">
 					</div>
 					<div class="slider__content">
-						<img src="img/slider__1.png" alt="">
-						<img src="img/slider__1.png" alt="">
-						<img src="img/slider__1.png" alt="">
-						<img src="img/slider__1.png" alt="">
-						<img src="img/slider__1.png" alt="">
-						<img src="img/slider__1.png" alt="">
+						<img src="img/slider__1.png" alt="" class="content__img">
+						<img src="img/slider__1.png" alt="" class="content__img">
+						<img src="img/slider__1.png" alt="" class="content__img">
+						<img src="img/slider__1.png" alt="" class="content__img">
+						<img src="img/slider__1.png" alt="" class="content__img">
+						<img src="img/slider__1.png" alt="" class="content__img">
 					</div>
 					<ul class="slider__pointers">
 						<!-- <li class="slider__active"></li>
@@ -233,7 +233,6 @@
 				<p>Cursus in dapibus ultrices velit fusce. Felis lacus erat. Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
 				<form class="control__search">
 				  <input type="email" id="email" placeholder="Enter your email address...">
-				  <!-- <label for="email"><img src="img/go.png" alt="go"></label> -->
 				</form>
 				<div>
 					<img src="img/email.png" alt="email">
@@ -283,6 +282,15 @@
 				<a href="#"><img src="img/goo.png" alt="#"></a>
 			</div>
 		</div>
+	</div>
+	<div class="popup">
+		<form class="popup__form popup__dnc">
+			<input type="text" placeholder="Enter your name" class="popup__dnc">
+			<input type="text" placeholder="Enter your surname" class="popup__dnc">
+			<input type="email" placeholder="Enter your email address" class="popup__dnc">
+			<input type="submit" value="Send" class="popup__dnc">
+			<p>Click me or enywhere otside this window to close it</p>
+		</form>
 	</div>
 </body>
 <script src="js/main.js"></script>

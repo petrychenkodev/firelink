@@ -39,6 +39,10 @@
 		.slider__content{
 			display:flex;
 			@include transition;
+			.content__img{
+				width:100%;
+				height: auto;
+			}
 		}
 		.slider__control{
 			position:absolute;
@@ -115,4 +119,26 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 585px) {
+	.main .navigation .navigation__list li{
+		padding: 10px;
+	}
+}
+@media (max-width: 475px) {
+	.main .navigation .navigation__list li{
+		font-size: 12px;
+	}
+}
+@media (max-width: 880px) {
+	.main .banners{
+		flex-wrap: wrap;
+    	justify-content: center;
+	}
+	.main .banners .banners__item{
+		flex-basis: unset;
+		margin: 10px;
+	}
+
 }

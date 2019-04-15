@@ -62,3 +62,20 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+@media (max-width: 830px) {
+	.control{
+		flex-wrap: wrap;
+    	justify-content: center;
+    	a{
+    	    flex-basis: 100%;
+		    padding-left: calc(50% - 66px);
+		    padding-bottom: 20px;
+    	}
+	}
+}
+@media (max-width: 689px) {
+	.control__search{
+		padding-bottom: 30px;
+	}
+}
